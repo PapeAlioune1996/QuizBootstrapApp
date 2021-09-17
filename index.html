@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bootstrap</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+       <!---bootstrap -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- button demarrer Quiz  -->
+    <div class="start_btn"><button>Demarez Quiz</button></div>
+       <!---regle du Quiz-->
+   <div class="info_box">
+    <div class="info_title">
+        <h2>Les regles du Quiz</h2>
+    </div>
+    <div class="info_list">
+     <div class="info">1-Vous avez <span>30 minutes</span> pour chaque question </div>
+     <div class="info">2-Vous ne pourez plus selectionner une reponse lorsque votre temps est epuise</div>
+     <div class="info">3-Chaque bonne reponse est note sur 1 point</div>
+     <div class="info">4-Vous ne pourez plus quitter le Quiz quand il est demarer</div>
+     </div>
+     <hr>
+     <div class="buttons">
+         <button class="quit bg-danger">Quittez</button>
+         <button class="restart bg-success">Continuez</button>
+     </div>
+</div>
+
+
+  <!-- Quiz Box -->
+  <div class="quiz_box">
+    <header>
+        <div class="title">Quiz App Bootstrap</div>
+        <div class="duree">
+            <div class="duree_txt">Duree</div>
+            <div class="duree_sec">30</div>
+        </div>
+        <div class="duree_line"></div>
+    </header>
+    <section>
+        <div class="question_text">
+               <!-- Inserer au niveau du fichier app.js JavaScript -->
+        </div>
+        <div class="option_list">
+              <!-- Inserer au niveau du fichier app.js JavaScript -->
+        </div>
+    </section>
+
+    <!-- footer du Quiz Box -->
+    <footer>
+        <div class="total_question">
+            <!-- Inserer au niveau du fichier app.js JavaScript -->
+        </div>
+        <button class="next_btn">Suivant</button>
+    </footer>
+</div>
+
+<!-- Result Box -->
+<div class="resultat">
+    <div class="icon">
+        <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">Vous venez de terminer le quiz!</div>
+    <div class="score_text">
+          <!-- Inserer au niveau du fichier app.js JavaScript -->
+    </div>
+    <div class="buttons">
+        <button class="restart bg-success">Rejouer le Quiz</button>
+        <button class="quit bg-danger">Quitter le Quiz</button>
+    </div>
+</div>
+
+
+
+<!----------Script--------->
+<script src="./js/App.js"></script>
+<script src="./js/question.js"></script>
+</body>
+</html>
